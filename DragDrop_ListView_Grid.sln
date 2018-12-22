@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragDrop_ListView_Grid", "DragDrop_ListView_Grid\DragDrop_ListView_Grid.csproj", "{DD5EA29E-6877-433B-875B-D10D7B95AD75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|ARM.Build.0 = Debug|ARM
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|ARM.Deploy.0 = Debug|ARM
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|x64.ActiveCfg = Debug|x64
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|x64.Build.0 = Debug|x64
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|x64.Deploy.0 = Debug|x64
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|x86.ActiveCfg = Debug|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|x86.Build.0 = Debug|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Debug|x86.Deploy.0 = Debug|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|Any CPU.ActiveCfg = Release|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|ARM.ActiveCfg = Release|ARM
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|ARM.Build.0 = Release|ARM
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|ARM.Deploy.0 = Release|ARM
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|x64.ActiveCfg = Release|x64
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|x64.Build.0 = Release|x64
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|x64.Deploy.0 = Release|x64
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|x86.ActiveCfg = Release|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|x86.Build.0 = Release|x86
+		{DD5EA29E-6877-433B-875B-D10D7B95AD75}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE33F5EE-38E1-4073-88C9-9070033A9FFD}
+	EndGlobalSection
+EndGlobal

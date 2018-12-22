@@ -1,0 +1,39 @@
+﻿<Page x:Class="DragDrop_ListView_Grid.Views.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:DragDrop_ListView_Grid.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="using:DragDrop_ListView_Grid.ViewModels" mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:MainPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <controls:PageHeader x:Name="pageHeader" Content="Character Overview" Background="Yellow"
+                             RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True" />
+
+        <Grid RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"
+              RelativePanel.AlignBottomWithPanel="True" 
+              RelativePanel.Below="pageHeader">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView Margin="4" x:Name="CharacterListView" Grid.Column="0" DisplayMemberPath="Name" CanDrag="True" CanDragItems="True" DragItemsStarting="CharacterItem_DragStarting" IsItemClickEnabled="True" SelectionMode="Single" ></ListView>
+            <Grid Grid.Column="1" Background="Black" AllowDrop="True"  DragOver="GridDestination_DragOver" Drop="GridDestination_DragDrop">
+                <FontIcon x:Name="PlatformIcon" FontFamily="Segoe MDL2 Assets" Glyph="&#xE759;" Foreground="White" FontSize="180" Opacity="0.1"/>
+                <TextBlock Margin="20" TextAlignment="Center" TextWrapping="Wrap" x:Name="PlatformText" Text="Drag and drop your data here" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Grid>
+
+    </RelativePanel>
+
+</Page>
